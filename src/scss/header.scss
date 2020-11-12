@@ -244,5 +244,12 @@
 	overflow: hidden;
 }
 
+.user--drop {
+	transition: $transition_4ms;
+}
+
+.rotate--icon {
+	transform: rotate(180deg);
+}
 
 

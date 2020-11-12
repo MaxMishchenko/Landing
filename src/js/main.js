@@ -64,6 +64,7 @@ $(document).ready(function () {
 			$('.header__mobile-menu').hide();
 			$('body').removeClass('body--lock');
 			$('.header__user-drop').hide();
+			$('.user--drop').removeClass('rotate--icon');
 		}
 	}
 	
@@ -71,6 +72,7 @@ $(document).ready(function () {
 	
 	$('.user--drop').click(function () {
 		$('.header__user-drop').slideToggle();
+		$(this).toggleClass('rotate--icon');
 	});
 	
 	// Search
