@@ -1,0 +1,68 @@
+.reviews-section {
+	padding: 90px 20px;
+
+	@include media-query($medium-down) {
+		padding: 20px 0 60px;
+	}
+}
+
+.reviews-section__title {
+	text-align: center;
+	color: $color_black;
+	font-family: $myriad_pro_regular;
+	font-size: 40px;
+	font-weight: 400;
+	letter-spacing: 1px;
+	margin-bottom: 60px;
+}
+
+.reviews-section__slide-img-wrapper {
+	margin-bottom: 40px;
+
+	img {
+		border-radius: 50%;
+	}
+}
+
+.reviews-section__slider {
+	display: flex;
+	display: flex;
+	justify-content: center;
+	align-items: baseline;
+
+	.slick-dots {
+		position: absolute;
+		display: flex;
+		bottom: -40px;
+	}
+
+	.slick-active {
+		.custom-slick-dots {
+			background-color: #4d575f;
+		}
+	}
+}
+
+.reviews-section__slide {
+	max-width: 315px;
+	display: flex !important;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	margin: 0 57px;
+
+	svg {
+		width: 40px;
+		height: 26px;
+	}
+}
+
+.reviews-section__slide-text {
+	margin-bottom: 35px;
+}
+
+.reviews-section__slide-info {
+	font-style: italic;
+	margin-bottom: 45px;
+}

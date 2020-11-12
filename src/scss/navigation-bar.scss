@@ -1,0 +1,39 @@
+.navigation-bar {
+	position: fixed;
+	right: 25px;
+	z-index: 999;
+	top: 50%;
+	transform: translateY(-50%);
+
+	@include media-query($medium-down) {
+		display: none;
+	}
+
+	li {
+		font-family: $aleo_bold;
+		color: $color_black;
+		padding-bottom: 15px;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		cursor: pointer;
+		font-weight: 700;
+
+		span {
+			display: block;
+			height: 1px;
+			min-width: 0;
+			max-width: 35px;
+			background-color: $color_black;
+			margin: 0 10px 4px 5px;
+			transition: $transition_4ms;
+		}
+	}
+}
+
+.active {
+	span {
+		min-width: 100% !important;
+		transition: width;
+	}
+}

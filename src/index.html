@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="shortcut icon" href="../img/favicon.ico">
+	<link href="../css/main.css" type="text/css" rel="stylesheet">
+	<title>Test landing page</title>
+</head>
+<body>
+<ul class="navigation-bar">
+	<li class="navigation-bar__item" data-anchor="first-section">01<span></span></li>
+	<li class="navigation-bar__item" data-anchor="second-section">02<span></span></li>
+	<li class="navigation-bar__item" data-anchor="third-section">03<span></span></li>
+	<li class="navigation-bar__item" data-anchor="fourth-section">04<span></span></li>
+	<li class="navigation-bar__item" data-anchor="fifth-section">05<span></span></li>
+	<li class="navigation-bar__item" data-anchor="sixth-section">06<span></span></li>
+	<li class="navigation-bar__item" data-anchor="seventh-section">07<span></span></li>
+</ul>
+<header class="header">
+	<a href="/" class="header__logo">TEST</a>
+	<nav class="header__nav">
+		<ul class="header__nav-menu">
+			<li>
+				<a href="#" class="search--icon">
+					<svg>
+						<use xlink:href="../img/sprite.svg#search"></use>
+					</svg>
+				</a>
+			</li>
+			<li><a href="#menu">Menu</a></li>
+			<li class="shopping-bag--icon">
+				<a href="#">
+					<svg>
+						<use xlink:href="../img/sprite.svg#shopping-bag"></use>
+					</svg>
+					<span>1</span>
+				</a>
+			</li>
+			<li class="user--acc">
+				<a href="#">
+					<svg>
+						<use xlink:href="../img/sprite.svg#user"></use>
+					</svg>
+					<span>Alex</span>
+				</a>
+				<div class="header__drop-down">
+					<a href="#">Settings</a>
+					<a href="#">Log out</a>
+				</div>
+			</li>
+		</ul>
+	</nav>
+	<nav class="header__mobile-nav">
+		<a href="#" class="search--icon">
+			<svg>
+				<use xlink:href="../img/sprite.svg#search"></use>
+			</svg>
+		</a>
+		<a href="#" class="shopping-bag--icon">
+			<svg>
+				<use xlink:href="../img/sprite.svg#shopping-bag"></use>
+			</svg>
+			<span>1</span>
+		</a>
+		<div class="header__burger-wrapper">
+			<span class="header__burger"></span>
+		</div>
+		<ul class="header__mobile-menu" style="display: none;">
+			<li class="user--acc">
+				<a href="#">Alex</a>
+				<svg class="user--drop">
+					<use xlink:href="../img/sprite.svg#chevron-down"></use>
+				</svg>
+			</li>
+			<li class="header__user-drop">
+				<a href="#">Settings</a>
+				<a href="#">Log out</a>
+			</li>
+			<li>
+				<a href="#">Menu</a>
+			</li>
+		</ul>
+	</nav>
+</header>
+<div class="search-form" style="display: none">
+	<form>
+		<input type="text" name="focus" required class="search" placeholder="Search..."/>
+		<svg class="search--close">
+			<use xlink:href="../img/sprite.svg#times"></use>
+		</svg>
+	</form>
+</div>
+<main>
+	<section id="first-section" class="hero-section">
+		<div class="hero-section__slide slide-1">
+			<div class="hero-section__slide-content">
+				<h1 class="hero-section__slide-title">Launching Soon</h1>
+				<a class="btn" href="#">Register interest</a>
+			</div>
+		</div>
+		<div class="hero-section__slide slide-2">
+			<div class="hero-section__slide-content">
+				<h1 class="hero-section__slide-title">New Design</h1>
+				<a class="btn" href="#">Order now</a>
+			</div>
+		</div>
+		<div class="hero-section__slide slide-3">
+			<div class="hero-section__slide-content">
+				<h1 class="hero-section__slide-title">About Us</h1>
+				<a class="btn" href="#">Read more</a>
+			</div>
+		</div>
+	</section>
+	<section id="second-section" class="image-with-text-section">
+		<div class="image-with-text__block image--block">
+			<div class="image-with-text__image-wrapper">
+				<img class="image-with-text__image" src="../img/why_use.png" alt="Flowers">
+			</div>
+			<h2 class="image-with-text__title thin--title">Why use Test</h2>
+		</div>
+		<div class="image-with-text__block">
+			<div class="image-with-text__info">
+				<h3 class="title">Tableware</h3>
+				<p class="text">Browse exciting products from a selection of quality makers, all in one place</p>
+			</div>
+			<div class="image-with-text__info">
+				<h3 class="title">Products Just For You</h3>
+				<p class="text">Our technology will do all the hard work & recommend products that fit well with your
+					customer profile, based on what your competition is doing.</p>
+			</div>
+			<div class="image-with-text__info">
+				<h3 class="title">Test It In Your Store</h3>
+				<p class="text">Our test & return feature will make it easy for you to find that bestseller, delight
+					your customers & keep them coming back for more</p>
+			</div>
+		</div>
+	</section>
+	<section id="third-section" class="buying-section">
+		<div class="buying-section__text">
+			<h2 class="buying-section__title bold--title">Buying for your store
+				<span>has never been easier</span></h2>
+		</div>
+		<div class="buying-section__container">
+			<div class="buying-section__block">
+				<svg>
+					<use xlink:href="../img/sprite.svg#lock"></use>
+				</svg>
+				<div class="buying-section__block-content">
+					<h3 class="title">Free For Retailers</h3>
+					<p class="text">Sparkinity is completely free for retailers. No markups or fees</p>
+				</div>
+			</div>
+
+			<div class="buying-section__block">
+				<svg>
+					<use xlink:href="../img/sprite.svg#message"></use>
+				</svg>
+				<div class="buying-section__block-content">
+					<h3 class="title">Maker Stories & Reviews</h3>
+					<p class="text">In depth profiles on makers, see who you are buying from and how they rate</p>
+				</div>
+			</div>
+
+			<div class="buying-section__block">
+				<svg>
+					<use xlink:href="../img/sprite.svg#box"></use>
+				</svg>
+				<div class="buying-section__block-content">
+					<h3 class="title">Easy Returns</h3>
+					<p class="text">Send back any products that don’t sell within 90 days</p>
+				</div>
+			</div>
+
+			<div class="buying-section__block">
+				<svg>
+					<use xlink:href="../img/sprite.svg#diagram"></use>
+				</svg>
+				<div class="buying-section__block-content">
+					<h3 class="title">Sector Trends</h3>
+					<p class="text">Reporting and data analytics on trends in your business sector</p>
+				</div>
+			</div>
+
+			<div class="buying-section__block">
+				<svg>
+					<use xlink:href="../img/sprite.svg#mark"></use>
+				</svg>
+				<div class="buying-section__block-content">
+					<h3 class="title">Low Minimums</h3>
+					<p class="text">Low opening order minimums for most makers</p>
+				</div>
+			</div>
+
+			<div class="buying-section__block">
+				<svg>
+					<use xlink:href="../img/sprite.svg#bottle"></use>
+				</svg>
+				<div class="buying-section__block-content">
+					<h3 class="title">Unique Products</h3>
+					<p class="text">A variety of products from talented and quality Makers</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="fourth-section" class="how-works-section">
+		<h2 class="how-works-section__title thin--title">How Test works</h2>
+		<div class="how-works-section__container">
+			<div class="how-works-section__block">
+				<span class="how-works-section__block-counter">01</span>
+				<div class="how-works-section__block-content">
+					<h3 class="title">Select & Order</h3>
+					<p class="text">Select products from a wide variety of talented & quality Makers and place your
+						order</p>
+				</div>
+			</div>
+			<div class="how-works-section__block">
+				<span class="how-works-section__block-counter">02</span>
+				<div class="how-works-section__block-content">
+					<h3 class="title">Deliverd To Your Store</h3>
+					<p class="text">Items typically ship to your store from Makers within 48 hours of your order</p>
+				</div>
+			</div>
+			<div class="how-works-section__block">
+				<span class="how-works-section__block-counter">03</span>
+				<div class="how-works-section__block-content">
+					<h3 class="title">Test & Return</h3>
+					<p class="text">Test your selections with customers, you have 90 days to return it if it doesn't
+						sell</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="fifth-section" class="about-us-section">
+		<div class="about-us-section__img-wrapper">
+			<img src="../img/about_1.png" alt="Heart">
+		</div>
+		<div class="about-us-section__block">
+			<div class="about-us-section__content">
+				<h3 class="about-us-section__block-subtitle">About Us</h3>
+				<h2 class="about-us-section__block-title bold--title">We believe that
+					small can be big</h2>
+				<p class="about-us-section__block-text text">Sparkinity was born because we believe in innovation.
+					Data shows that small stores are better positioned than ever to take on retail giants as consumers
+					increasingly seek curation and a personalised touch. Agility is a powerful weapon and we seek to
+					empower
+					the agile.</p>
+				<p class="about-us-section__block-text text">​But to fulfil our vision we need to disrupt the age old
+					system
+					of distribution & wholesale. Our founding
+					team has personal experiences & understanding of the expenses incurred , time and incredible effort
+					that
+					both buyers & makers make to connect. All because of the need to get a physical glimpse of that
+					unicorn
+					called the bestseller before risking an order.</p>
+				<p class="about-us-section__block-text text">​We are changing the buying process by providing retailers
+					a
+					medium to order online with free returns.
+					Makers save on huge upfront costs for creating distribution networks & store owners can easily let
+					their
+					customers decide without taking on the risks involved with buying decisions. </p>
+			</div>
+		</div>
+		<div class="about-us-section__img-wrapper">
+			<img src="../img/about_2.png" alt="Heart">
+		</div>
+	</section>
+	<section id="sixth-section" class="reviews-section">
+		<h2 class="reviews-section__title thin--title">How Test works</h2>
+		<div class="reviews-section__slider">
+			<div class="reviews-section__slide">
+				<div class="reviews-section__slide-img-wrapper">
+					<img class="reviews-section__slide-img" src="../img/1.png" alt="Joanna Booth">
+				</div>
+				<h3 class="title">Joanna Booth</h3>
+				<p class="reviews-section__slide-text text">Looking forward to working with the Sparkinity team as they
+					really understand the pressures of buying, I am looking for new products everyday and can't wait to
+					try out their market test feature</p>
+				<span class="reviews-section__slide-info text">Owner of Space  London</span>
+				<svg>
+					<use xlink:href="../img/sprite.svg#quotes"></use>
+				</svg>
+			</div>
+			<div class="reviews-section__slide">
+				<div class="reviews-section__slide-img-wrapper">
+					<img class="reviews-section__slide-img" src="../img/3.png" alt="Ryan Finer">
+				</div>
+				<h3 class="title">Ryan Finer</h3>
+				<p class="reviews-section__slide-text text">As a small store we are constantly on our toes to delight
+					our customers and keep them coming back for more. Its a very competitive market and finding unique
+					products that work with our brand values & price architecture is hard. Sparkinity seems like a
+					promising & valuable concep</p>
+				<span class="reviews-section__slide-info text">Owner of Workshop</span>
+				<svg>
+					<use xlink:href="../img/sprite.svg#quotes"></use>
+				</svg>
+			</div>
+			<div class="reviews-section__slide">
+				<div class="reviews-section__slide-img-wrapper">
+					<img class="reviews-section__slide-img" src="../img/2.png" alt="Chloe Smith">
+				</div>
+				<h3 class="title">Chloe Smith</h3>
+				<p class="reviews-section__slide-text text">Having launched my home decor brand last year, I have been
+					struggling with trade fairs and connecting with buyers as its so expensive and time consuming.
+					Sparkinity is an amazing concept. I have been waiting for this for a long time</p>
+				<span class="reviews-section__slide-info text">Maker of ceramics</span>
+				<svg>
+					<use xlink:href="../img/sprite.svg#quotes"></use>
+				</svg>
+			</div>
+		</div>
+	</section>
+	<section id="seventh-section" class="register-section">
+		<div class="register-section__block">
+			<div class="register-section__container">
+				<h2 class="register-section__block-title bold--title">Apply to join the community</h2>
+				<p class="register-section__block-text text">We are here to make a difference !<br>
+					So whether you are a talented Maker or a Retailer drop us a line to join our platform. We would love
+					to hear from you</p>
+				<a class="btn" href="#">Register interest</a>
+			</div>
+		</div>
+		<div class="register-section__img-wrapper">
+			<img src="../img/register.png" alt="Cactus">
+		</div>
+	</section>
+</main>
+<footer class="footer">
+	<nav id="menu" class="footer__nav">
+		<ul class="footer__nav-items">
+			<li><a href="#first-section">Home</a></li>
+			<li><a href="#fifth-section">About us</a></li>
+			<li><a href="#fourth-section">Team</a></li>
+		</ul>
+		<a class="footer__nav-btn" href="#">Contact</a>
+	</nav>
+	<div class="footer__info">
+		<a class="footer__info-logo" href="/">Test</a>
+		<ul class="footer__info-items">
+			<li>
+				<a href="#">Terms & Condition</a>
+			</li>
+			<li>
+				<a href="#">Privacy policy</a>
+			</li>
+		</ul>
+	</div>
+</footer>
+<script src="../js/libs.min.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

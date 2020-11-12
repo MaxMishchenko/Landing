@@ -1,0 +1,24 @@
+// Main files
+
+@import 'nullstyle';
+@import 'mixins';
+@import 'variables';
+@import 'colors';
+@import 'fonts';
+@import 'global';
+@import 'slick';
+@import 'aos';
+
+// Site body
+
+@import 'header';
+@import 'search-form';
+@import 'hero-section';
+@import 'image-with-text-section';
+@import 'buying-section';
+@import 'about-us-section';
+@import 'how-works-section';
+@import 'reviews-section';
+@import 'register-section';
+@import 'navigation-bar';
+@import 'footer';

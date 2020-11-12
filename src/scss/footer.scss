@@ -1,0 +1,126 @@
+.footer__nav {
+	padding: 25px 390px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-top: 2px solid #d1d1d1;
+	border-bottom: 2px solid #d1d1d1;
+
+	@include media-query($tablet) {
+		padding: 25px 60px;
+	}
+
+	@include media-query($small) {
+		padding: 20px;
+		flex-direction: column;
+	}
+}
+
+.footer__nav-items {
+	display: flex;
+
+	@include media-query($small) {
+		margin-bottom: 20px;
+	}
+
+	li {
+		margin-right: 35px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		a {
+			color: $color_black;
+			font-family: $aleo_light;
+			font-size: 12px;
+			font-weight: 300;
+			text-transform: uppercase;
+			letter-spacing: 0.3px;
+			transition: $transition_4ms;
+
+			&:hover {
+				color: $color_logo_hover;
+			}
+		}
+	}
+}
+
+.footer__nav-btn {
+	color: $color_black;
+	font-family: $aleo_light;
+	font-size: 12px;
+	font-weight: 300;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 0.6px;
+	border: 1px solid #d9d9d9;
+	padding: 17px 50px;
+	transition: $transition_4ms;
+
+	&:hover {
+		background-color: $color_black;
+		color: $color_white;
+	}
+}
+
+.footer__info {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 22px 390px;
+
+	@include media-query($tablet) {
+		padding: 22px 60px;
+	}
+
+	@include media-query($small) {
+		padding: 20px;
+	}
+}
+
+.footer__info-logo {
+	font-family: $myriad_pro_bold;
+	font-size: 36px;
+	text-transform: uppercase;
+	color: $color_black;
+	transition: $transition_4ms;
+	letter-spacing: 1.8px;
+
+	&:hover {
+		color: $color_logo_hover;
+	}
+}
+
+.footer__info-items {
+	display: flex;
+
+	@include media-query($extra-small) {
+		flex-direction: column-reverse;
+	}
+
+	li {
+		margin-right: 95px;
+
+		@include media-query($extra-small) {
+			margin-right: 0;
+			padding: 5px 0;
+		}
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		a {
+			color: $color_footer_text;
+			font-family: $roboto_light;
+			font-size: 14px;
+			font-weight: 300;
+			transition: $transition_4ms;
+
+			&:hover {
+				color: $color_logo_hover;
+			}
+		}
+	}
+}
